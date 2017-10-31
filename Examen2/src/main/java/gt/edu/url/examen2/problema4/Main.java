@@ -5,14 +5,14 @@ import gt.edu.url.examen2.problema4.LinkedPositionalList;
 public class Main {
 
 	public static void main(String[] args) {
-		LinkedPositionalList<String> poList = new LinkedPositionalList<>(); 
-		poList.addFirst("1");
-		poList.addFirst("2");
-		poList.addFirst("3");
-		poList.addFirst("4");
-		poList.addFirst("5");
+		LinkedPositionalList<String> List = new LinkedPositionalList<>(); 
+		List.addFirst("1");
+		List.addFirst("2");
+		List.addFirst("3");
+		List.addFirst("4");
+		List.addFirst("5");
 	
-		System.out.println(poList.positionAtIndex(4).getElement());
+		System.out.println(List.positionAtIndex(4).getElement());
 	}
 
 	

@@ -1,8 +1,11 @@
 package gt.edu.url.examen2.problema2;
 import gt.edu.url.examen2.problema2.DemostracionLista;
-
+/**
+ * 
+ * @author Giovanni
+ *
+ */
 public class CrearDemoLista implements DemoList {
-
 	@Override
 	public List<Integer> crearDemoLista() {
         List<Integer> obj = new DemostracionLista<>();

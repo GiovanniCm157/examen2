@@ -1,4 +1,4 @@
-package gt.edu.url.examen2.problema4;
+package gt.edu.url.examen2.problema3;
 /**
  * 
  * @author Giovanni

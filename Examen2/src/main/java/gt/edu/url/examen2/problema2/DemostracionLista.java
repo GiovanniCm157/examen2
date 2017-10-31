@@ -1,34 +1,51 @@
 package gt.edu.url.examen2.problema2;
 
-
+/**
+ * 
+ * @author Giovanni
+ *
+ * @param <E>
+ */
 public class DemostracionLista<E> implements List<E>
 {
 	public static final int CAPACITY=1;
 	private E[ ] data;
 	private int size = 0;
-	
-
+/**
+ */
 	public DemostracionLista() {
 		this(CAPACITY); 
 	}
-
+/**
+ * 
+ * @param capacity
+ */
 	public DemostracionLista(int capacity) {
 		data = (E[]) new Object[capacity];
 	}
-
+/**
+ * Metodo que nos retorna el tamaño de la lista
+ */
 	public int size() {
 		return size;
 	}
-
+/**
+ * Retorna un valor de true o false dependiendo de si la lista esta vacia
+ */
 	public boolean isEmpty() { 
 		return size == 0;
 	}
 
+	/**
+	 * Obtiene el elemento de cierto index del cual nosotros querramos obtener el valor
+	 */
 	public E get(int i) {
 		//checkIndex(i, size);
 		return data[i];
 	}
-
+/**
+ * Determina el valor a ingresar en un index determinado
+ */
 	public E set(int i, E e) {
 		//checkIndex(i, size);
 		E temp = data[i];
@@ -50,7 +67,9 @@ public class DemostracionLista<E> implements List<E>
                      }
                    }        
                  }
-        
+        /**
+         * Remover Datos de cierto index
+         */
         public E remove( int i ) throws IndexOutOfBoundsException {
 		//checkIndex(i, size);
 		E temp = data[i];
